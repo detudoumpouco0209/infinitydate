@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosso Infinito</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="tela-inicial" class="tela-inicial">
+        <h1>Feliz Dia dos Namorados, meu amor! 💖</h1>
+        <button onclick="entrarSite()">Entrar</button>
+    </div>
+
+    <div class="container" id="conteudo" style="display: none;">
+        <h1>💖 Nosso Infinito 💖</h1>
+
+        <div class="slideshow">
+            <img id="slide" src="imagens/1.jpg" alt="Nossas fotos">
+            <p id="frase">Nossa primeira frase aqui...</p>
+        </div>
+
+        <div class="players">
+            <h2>Escolha uma música 🎶</h2>
+            <audio controls>
+                <source src="musicas/Jason Mraz - A World With You.mp3" type="audio/mp3">
+                Seu navegador não suporta áudio.
+            </audio>
+            <audio controls>
+                <source src="musicas/Paramore - The Only Exception.mp3" type="audio/mp3">
+                Seu navegador não suporta áudio.
+            </audio>
+            <audio controls>
+                <source src="musicas/SCRUBB - คนนี้.mp3" type="audio/mp3">
+                Seu navegador não suporta áudio.
+            </audio>
+        </div>
+    </div>
+
+    <div class="emojis"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
