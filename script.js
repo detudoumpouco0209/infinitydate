@@ -54,7 +54,9 @@ function criarEmoji() {
     emoji.classList.add('emoji');
     emoji.innerText = emojis[Math.floor(Math.random() * emojis.length)];
     emoji.style.left = Math.random() * 100 + "vw";
+    emoji.style.fontSize = Math.random() * 20 + 20 + "px";
     emoji.style.animationDuration = (Math.random() * 3 + 3) + "s";
+
     document.querySelector('.emojis').appendChild(emoji);
 
     setTimeout(() => {
