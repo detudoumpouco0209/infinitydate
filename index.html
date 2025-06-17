@@ -41,6 +41,28 @@
 
     <div class="emojis"></div>
 
+<script>
+  const emojis = ["🌹", "🐾", "❤️", "💞", "🐶"];
+
+  function criarEmoji() {
+    const emoji = document.createElement('div');
+    emoji.classList.add('emoji');
+    emoji.innerText = emojis[Math.floor(Math.random() * emojis.length)];
+
+    emoji.style.left = Math.random() * 100 + "vw";
+    emoji.style.fontSize = Math.random() * 20 + 20 + "px";
+
+    document.querySelector('.emojis').appendChild(emoji);
+
+    setTimeout(() => {
+      emoji.remove();
+    }, 5000);
+  }
+
+  setInterval(criarEmoji, 300);
+</script>
+
+
     <script src="script.js"></script>
 </body>
 </html>
