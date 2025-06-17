@@ -7,8 +7,9 @@
 body {
     background: linear-gradient(to bottom, #A8E6CF, #A0E7E5);
     font-family: 'Dancing Script', cursive;
-    overflow: hidden;
+    overflow: auto;
     min-height: 100vh;
+    position: relative;
 }
 
 .tela-inicial {
