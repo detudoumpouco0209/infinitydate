@@ -106,21 +106,20 @@ audio {
 }
 
 .emoji {
-    position: absolute;
-    left: 0;
-    top: 100vh;
-    font-size: 24px;
-    animation: subir 5s linear forwards;
-    opacity: 1;
+  position: absolute;
+  top: 100vh;
+  font-size: 24px;
+  animation: subir 5s linear forwards;
+  opacity: 1;
 }
 
 @keyframes subir {
-    0% {
-        transform: translateY(0);
-        opacity: 1;
-    }
-    100% {
-        transform: translateY(-120vh);
-        opacity: 0;
-    }
+  from {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(-120vh);
+    opacity: 0;
+  }
 }
